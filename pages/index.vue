@@ -1,18 +1,18 @@
 <template>
   <div>
-    <div class="card w-96 bg-base-100 card-xs shadow-sm">
-      <div class="card-body">
-        <h2 class="card-title">Xsmall Card</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-        <div class="justify-end card-actions">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
+    <h1 class="text-lg mb-3">Subject Groups</h1>
+    <div class="flex flex-col gap-4">
+      <Card :title="Physics" @click="handleClick" />
+      <Card :title="Chemistry" @click="handleClick" />
     </div>
   </div>
 </template>
 
 <script setup>
+
+const handleClick = () => {
+  console.log('Card clicked')
+}
 
 
 </script>
